@@ -16,9 +16,8 @@
 
     public function getAfficherlesConf()
     {
-        alert("Ça fonctionne aussi");
-        $this->load->view('voter');
-        $tab['lesConf'] = $this->Model_Voter->getVoter();
         $this->load->model('Model_Voter');
+        $tab['lesConf'] = $this->Model_Voter->getVoter();
+        $this->load->view('voter');
     }
     }

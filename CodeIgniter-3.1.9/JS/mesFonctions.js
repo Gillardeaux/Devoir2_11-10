@@ -7,7 +7,6 @@ function AfficherLesConf()
             {
                 type:"get",
                 url:"index.php/Ctrl_1/getAfficherlesConf",
-                data:,
                 success:function(data)
                 {
                     $('#voter').empty();
